@@ -14,7 +14,7 @@ type TaxIncludedPriceJob struct {
 }
 
 func (job *TaxIncludedPriceJob) LoadData() {
-	file, err := os.Open("prices.ext")
+	file, err := os.Open("prices.txt")
 
 	if err != nil {
 		fmt.Println("Could not open file!")
