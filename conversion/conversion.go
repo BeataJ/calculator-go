@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func StringsToFoat(strings []string) ([]float64, error) {
+func StringsToFoats(strings []string) ([]float64, error) {
 	var floats []float64
 
 	for _, stringVal := range strings {
@@ -13,7 +13,7 @@ func StringsToFoat(strings []string) ([]float64, error) {
 
 		if err != nil {
 
-			return nil, errors.New("Failed to convert string to float.")
+			return nil, errors.New("failed to convert string to float")
 		}
 
 		floats = append(floats, floatVal)
